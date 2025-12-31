@@ -1,0 +1,71 @@
+{% load static %}
+
+{% block content1 %}
+{% endblock %}
+<!-- sidebar -->
+            <div class="sidebar p-lg-4 offcanvas-lg offcanvas-end" tabindex="-1" id="sidebarHeader"
+                aria-labelledby="sidebarHeaderLabel">
+                <div class="offcanvas-header flex-column position-relative">
+                    <button type="button"
+                        class="btn p-0 position-absolute mt-3 ms-3 top-0 start-0 border-0 bg-transparent shadow-none"
+                        style="width: 40px;" data-bs-dismiss="offcanvas" aria-label="Close"
+                        data-bs-target="#sidebarHeader">
+                        <img class="w-100" src="{% static "sub-page/src/assets/images/route-back.svg" %}" alt="">
+                    </button>
+                    <div class="sidebar-logo">
+                        <img class="w-100"
+                            src="https://img.freepik.com/free-vector/bird-colorful-gradient-design-vector_343694-2506.jpg?semt=ais_hybrid&w=740&q=80"
+                            alt="">
+                    </div>
+                </div>
+                <div
+                    class="offcanvas-body sidebar-body overflow-auto position-sticky d-flex flex-column align-items-center row-gap-4">
+                    <div class="sidebar-list w-100">
+                        <a class="w-100 fw-bolder h3 fs-3 mb-4 text-decoration-none text-primary" href="{% url 'homashahr:manager' %}">داشبورد</a>
+                        <div class="list-group list-group-flush border-top border-bottom border-color w-100">
+ 
+                            <a href="{% url 'homashahr:list_history' %}"
+                                class={% block active_history %}"list-group-item list-group-item-action bg-transparent hover-smooth text-primary border-color fw-semibold fs-6"{% endblock %}>
+                                تاریخچه
+                            </a>
+ 
+                            <a href="{% url 'homashahr:list_news' %}"
+                                class={% block active_news %}"list-group-item list-group-item-action bg-transparent hover-smooth text-primary border-color fw-semibold fs-6"{% endblock %}>
+                                اخبار
+                            </a>
+                            <a href="{% url 'homashahr:list_project' %}"
+                                class={% block active_project %} "list-group-item list-group-item-action bg-transparent hover-smooth text-primary border-color fw-semibold fs-6"{% endblock %}>
+                                پروژه ها
+                            </a>
+                            <a href="{% url 'homashahr:list_councils' %}"
+                                class={% block active_councils %}"list-group-item list-group-item-action bg-transparent hover-smooth text-primary border-color fw-semibold fs-6"{% endblock %}>
+                                شورا ها
+                            </a>
+                            <a href="{% url 'homashahr:list_mayor' %}"
+                                class={% block active_mayor %}"list-group-item list-group-item-action bg-transparent hover-smooth text-primary border-color fw-semibold fs-6"{% endblock %}>
+                                شهردار
+                            </a>
+                            <a href="{% url 'homashahr:list_celebrities' %}"
+                                class={% block active_celebrities %} "list-group-item list-group-item-action bg-transparent hover-smooth text-primary border-color fw-semibold fs-6" {% endblock %} >
+                                مشاهیر
+                            </a>
+                            <a href="{% url 'homashahr:list_martyrs' %}"
+                                class={% block active_martyrs %}"list-group-item list-group-item-action bg-transparent hover-smooth text-primary border-color fw-semibold fs-6"{% endblock %}>
+                                شهدا
+                            </a>
+                            <a href="{% url 'homashahr:list_personnel' %}"
+                                class={% block active_personnel %}"list-group-item list-group-item-action bg-transparent hover-smooth text-primary border-color fw-semibold fs-6"{% endblock %}>
+                                پرسنل
+                            </a>
+                            <a href="{% url 'homashahr:list_municipality' %}"
+                                class={% block active_municipality %}"list-group-item list-group-item-action bg-transparent hover-smooth text-primary border-color fw-semibold fs-6"{% endblock %}>
+                                مشخصات هماشهر
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+{% block content2 %}
+{% endblock %}
