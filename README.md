@@ -2,9 +2,15 @@
 
 پروژه‌ی **Homashahr Municipality** یک وب‌اپلیکیشن مبتنی بر Django است که برای مدیریت اطلاعات شهرداری، شورا، شهردار، مشاهیر، پروژه‌ها، اخبار و سایر بخش‌های مرتبط طراحی شده است.
 
+
+
 ---
 
+
+
 # 📂 ساختار پوشه‌های پروژه Homashahr Municipality
+
+
 
 ## homashahr
 - settings.py  
@@ -12,7 +18,7 @@
 
 ## municipality
 - ### templates
-- - base.html  
+  - base.html  
 - - form-celebrities.html  
 - - form-councils.html  
 - - form-history.html  
